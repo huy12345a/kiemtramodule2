@@ -70,6 +70,12 @@ public class PhoneManage {
         this.phoneManageMap = new HashMap<>();
     }
 
+    public Map<String, Phone> getPhoneManageMap() {
+        return phoneManageMap;
+    }
+
+
+
     public void addPhone(Phone phone) {
         phoneManageMap.put(phone.getName(), phone);
     }

@@ -13,7 +13,8 @@ public class Main implements Manu {
                 System.out.println(" 2 . xoa :  ");
                 System.out.println(" 3 . xem danh sach : ");
                 System.out.println(" 4 . tim kiem : ");
-                System.out.println(" 5 . thoat chuong trinh : ");
+                System.out.println(" 5 . ghi du lieu vao file ");
+                System.out.println(" 6 . thoat chuong trinh ");
                 Scanner scanner = new Scanner(System.in);
                 int choix = Integer.parseInt(scanner.nextLine());
                 switch (choix) {
@@ -29,6 +30,8 @@ public class Main implements Manu {
                     case SEARCH_PHONE:
                         phoneManage.searchByName(scanner);
                         break;
+                    case WRITE_FILE:
+                        writereadfile.writeFile(phoneManage);
                     case EXIT:
                         System.exit(0);
                 }
